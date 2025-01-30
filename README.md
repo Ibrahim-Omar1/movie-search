@@ -73,7 +73,7 @@ Create a `.env.local` file in the root directory:
 
 ```bash
 OMDB_API_KEY=your_api_key_here
-NEXT_PUBLIC_BASE_URL=http://www.omdbapi.com
+NEXT_PUBLIC_API_URL=http://www.omdbapi.com
 ```
 
 ### Installation
