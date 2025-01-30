@@ -1,5 +1,5 @@
 import { MoviesGridSkeleton } from "@/components/movie-skeleton"
-import { SearchForm } from "@/components/search-form"
+import SearchForm from "@/components/search-form"
 import SearchResults from "@/components/search/search-results"
 import type { SearchParams } from "@/lib/types"
 import type { Metadata, ResolvingMetadata } from "next"
@@ -23,7 +23,7 @@ const SearchPageContent = async ({
   return (
     <div className="flex flex-col items-center gap-8">
       <div className="w-full max-w-2xl space-y-4">
-        <SearchForm />
+        <SearchForm searchParams={params} />
       </div>
 
       <Suspense key={`${query}-${page}`} fallback={<MoviesGridSkeleton />}>

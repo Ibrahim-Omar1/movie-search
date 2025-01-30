@@ -40,4 +40,4 @@ next-env.d.ts
 .infisical.json
 .cursorignore
 .cursorrules
-
+.env

@@ -1,7 +1,7 @@
 export function MovieSkeleton() {
   return (
     <div className="space-y-4">
-      <div className="aspect-[2/3] bg-muted rounded-lg animate-pulse" />
+      <div className="aspect-[1/1.2] bg-muted rounded-lg animate-pulse" />
       <div className="space-y-2">
         <div className="h-4 w-3/4 bg-muted rounded animate-pulse" />
         <div className="h-4 w-1/4 bg-muted rounded animate-pulse" />

@@ -1,6 +1,6 @@
 import { MoviesGridSkeleton } from "@/components/movie-skeleton"
 import PopularMovies from "@/components/PopularMovies"
-import { SearchForm } from "@/components/search-form"
+import SearchForm from "@/components/search-form"
 import type { SearchParams } from "@/lib/types"
 import type { Metadata } from "next"
 import { Suspense } from "react"
@@ -53,7 +53,7 @@ const HomePageContent = async ({
     <div className="flex flex-col items-center gap-8">
       <div className="w-full max-w-2xl space-y-4">
         <h1 className="text-3xl font-bold text-center">Movie Search</h1>
-        <SearchForm />
+        <SearchForm searchParams={params} />
       </div>
 
       <Suspense key={page} fallback={<MoviesGridSkeleton />}>

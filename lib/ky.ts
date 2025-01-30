@@ -3,7 +3,7 @@ import api, { HTTPError, NormalizedOptions, type BeforeErrorHook } from 'ky';
 /**
  * Base URL for API requests, fallback to production URL if not specified
  */
-const baseURL = process.env.NEXT_PUBLIC_BASE_URL as string;
+const baseURL = process.env.NEXT_PUBLIC_API_URL as string;
 
 /**
  * Utility function to normalize and clean API URLs

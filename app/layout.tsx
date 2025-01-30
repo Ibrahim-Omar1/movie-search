@@ -1,4 +1,5 @@
 import { BackToTop } from "@/components/back-to-top";
+import { Navbar } from "@/components/navbar";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
@@ -88,12 +89,15 @@ export default function RootLayout({
       <body
         // className={`${geistMono.variable} antialiased`}
         className={cn(
-          "antialiased font-geist",
+          "antialiased font-geist min-h-screen",
           geistMono.variable,
           geistSans.variable
         )}
       >
-        {children}
+        <Navbar />
+        <main className="flex-1">
+          {children}
+        </main>
         <BackToTop />
       </body>
     </html>
