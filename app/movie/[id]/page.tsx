@@ -66,11 +66,14 @@ export async function generateMetadata(
       openGraph: {
         title: `${movie.Title} (${movie.Year})`,
         description: movie.Plot,
+        url: `http://localhost:3000/movie/${id}`,
         type: "video.movie",
         siteName: "Movie Search",
         images: [
           {
-            url: movie.Poster !== "N/A" ? movie.Poster : "/placeholder.jpg",
+            url: movie.Poster !== "N/A" ? movie.Poster : 'opengraph.jpg',
+            width: 1200,
+            height: 630,
             alt: movie.Title,
           },
           ...previousImages,

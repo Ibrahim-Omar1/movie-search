@@ -1,6 +1,6 @@
 # Movie Search Application
 
-A modern, responsive movie search application built with Next.js 14, TypeScript, and the OMDB API. This application allows users to search for movies, view detailed information, and discover popular films.
+A modern, responsive movie search application built with Next.js 15, TypeScript, and the OMDB API. This application allows users to search for movies, view detailed information, and discover popular films.
 
 ## Features
 
@@ -16,7 +16,7 @@ A modern, responsive movie search application built with Next.js 14, TypeScript,
 
 ## Tech Stack
 
-- **Framework:** Next.js 14 (App Router)
+- **Framework:** Next.js 15 (App Router)
 - **Language:** TypeScript
 - **Styling:** Tailwind CSS
 - **UI Components:** shadcn/ui
@@ -44,7 +44,6 @@ A modern, responsive movie search application built with Next.js 14, TypeScript,
 │   │   ├── movie-metadata.tsx
 │   │   └── movie-ratings.tsx
 │   ├── search/          # Search-related components
-│   │   ├── search-form.tsx
 │   │   └── search-results.tsx
 │   └── ui/              # Shared UI components
 │       ├── button.tsx

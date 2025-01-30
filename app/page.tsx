@@ -16,12 +16,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Movie Search | Popular Movies",
     description: "Search and discover popular movies from OMDB database",
+    url: "http://localhost:3000",
     type: "website",
     siteName: "Movie Search",
     locale: "en_US",
     images: [
       {
-        url: "/og-image.jpg", // You'll need to add this image to your public folder
+        url: "/opengraph.jpg", // You'll need to add this image to your public folder
         width: 1200,
         height: 630,
         alt: "Movie Search",
@@ -32,7 +33,10 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Movie Search | Popular Movies",
     description: "Search and discover popular movies from OMDB database",
-    images: ["/og-image.jpg"],
+    images: ["/opengraph.jpg"],
+    creatorId: "ebrahim_omar4",
+    siteId: "ebrahim_omar4",
+    site: "ebrahim_omar4",
   },
 }
 

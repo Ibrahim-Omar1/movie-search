@@ -13,28 +13,66 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://your-domain.com"),
+  // TODO: change domain to vercel domain
+  metadataBase: new URL("http://localhost:3000"),
   title: {
     template: "%s | Movie Search",
     default: "Movie Search | Find Your Favorite Movies",
   },
   description: "Search and discover movies from the OMDB database. Get detailed information about movies, including plot, cast, ratings, and more.",
+  alternates: {
+    canonical: "../",
+  },
   keywords: ["movies", "search", "OMDB", "film database", "movie information"],
-  authors: [{ name: "Your Name" }],
-  creator: "Your Name",
-  publisher: "Your Name",
+  authors: [{ name: "Ibrahim Omar" }],
+  creator: "Ibrahim Omar",
+  publisher: "Ibrahim Omar",
   robots: {
     index: true,
     follow: true,
   },
   openGraph: {
+    title: "Movie Search | Popular Movies",
+    description: "Search and discover popular movies from OMDB database",
     type: "website",
     siteName: "Movie Search",
     locale: "en_US",
+    images: [
+      {
+        url: "/opengraph.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Movie Search",
+      },
+    ],
+    url: "http://localhost:3000",
+
   },
   twitter: {
     card: "summary_large_image",
-    creator: "@yourusername",
+    creator: "ebrahim_omar4",
+    title: "Movie Search | Popular Movies",
+    description: "Search and discover popular movies from OMDB database",
+    images: ["/opengraph.jpg"],
+    creatorId: "ebrahim_omar4",
+    siteId: "ebrahim_omar4",
+    site: "ebrahim_omar4",
+  },
+  icons: {
+    icon: [
+      { url: '/favicon.ico' },
+      { url: '/icon', type: 'image/png', sizes: '32x32' },
+    ],
+    apple: [
+      { url: '/apple-icon', type: 'image/png', sizes: '180x180' },
+    ],
+    other: [
+      {
+        rel: 'mask-icon',
+        url: '/favicon.svg',
+        color: '#000000',
+      },
+    ],
   },
 };
 
