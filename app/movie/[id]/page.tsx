@@ -66,7 +66,7 @@ export async function generateMetadata(
       openGraph: {
         title: `${movie.Title} (${movie.Year})`,
         description: movie.Plot,
-        url: `http://localhost:3000/movie/${id}`,
+        url: `https://movie-search-rho-silk.vercel.app/movie/${id}`,
         type: "video.movie",
         siteName: "Movie Search",
         images: [

@@ -49,7 +49,7 @@ export const metadata: Metadata = {
         alt: "Movie Search",
       },
     ],
-    url: "http://localhost:3000",
+    url: "https://movie-search-rho-silk.vercel.app",
 
   },
   twitter: {

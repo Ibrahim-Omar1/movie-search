@@ -57,6 +57,7 @@ export async function generateMetadata(
         ? `Search Results for "${query}" | Page ${page}` 
         : "Movie Search",
       description: `Browse movie search results for "${query}". Find detailed information about movies matching your search.`,
+      url: `https://movie-search-rho-silk.vercel.app/search?q=${query}&page=${page}`,
       type: "website",
       siteName: "Movie Search",
       images: [...previousImages],
