@@ -1,10 +1,10 @@
 import { BackToTop } from "@/components/back-to-top";
 import { Navbar } from "@/components/navbar";
 import { cn } from "@/lib/utils";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   // TODO: change domain to vercel domain
-  metadataBase: new URL("http://localhost:3000"),
+  metadataBase: new URL("https://movie-search-rho-silk.vercel.app"),
   title: {
     template: "%s | Movie Search",
     default: "Movie Search | Find Your Favorite Movies",
