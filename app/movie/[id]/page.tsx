@@ -20,7 +20,7 @@ const MoviePageContent = async ({
       <Button variant="ghost" asChild className="mb-6">
         <Link href="/">
           <ChevronLeft className="mr-2 h-4 w-4" />
-          Back to Search
+          Back to Home
         </Link>
       </Button>
 
